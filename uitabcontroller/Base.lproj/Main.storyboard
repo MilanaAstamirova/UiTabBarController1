@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EWD-XU-1qy">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--О книге-->
+        <scene sceneID="ovK-NV-CCo">
+            <objects>
+                <navigationController id="57N-wq-6NH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="О книге" image="book.fill" catalog="system" selectedImage="book.fill" id="L3H-a2-FcD"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aIY-ry-EOi">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8Z3-0Q-FXQ" kind="relationship" relationship="rootViewController" id="bNL-bc-pdA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E5o-SA-TcW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="194" y="-460"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Fdg-Jk-Dlg">
+            <objects>
+                <viewController id="8Z3-0Q-FXQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="okP-3j-UjK" customClass="SecondViewController">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="qaf-ud-v93">
+                                <rect key="frame" x="96" y="88" width="222" height="325"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="65"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAe-5C-YW8">
+                                <rect key="frame" x="25" y="413" width="364" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Навсегда уезжая из СССР в США, Сергей Довлатов берет только скромный старый чемодан с несколькими вещами: рубашкой, тремя парами носков, двубортным костюмом, котиковой шапкой. У каждой вещи есть своя история. И каждой посвящен отдельный рассказ этого сборника.
+Все вещи из чемодана отмечают разные периоды жизни героя: учебу в институте, службу в армии, работу в редакции газеты, встречу с будущей супругой. А житейские истории, связанные с их приобретением, ярко характеризуют целую эпоху, в которую довелось жить одному из самых талантливых российских писателей и публицистов до эмиграции за океан.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfJ-cl-Pht">
+                                <rect key="frame" x="10" y="804" width="394" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="История публикации"/>
+                                <connections>
+                                    <segue destination="fgq-3m-tEb" kind="show" id="7Dg-0s-EPG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NdG-dR-qbc"/>
+                        <color key="backgroundColor" red="1" green="0.84154542325123882" blue="0.66018275601162602" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MLF-4q-wfx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d4H-cE-K6a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1149" y="-460"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Q7l-zs-UiY">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="fgq-3m-tEb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wco-S0-64a" customClass="ThirdViewController">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGM-Qe-gMh">
+                                <rect key="frame" x="25" y="88" width="384" height="725"/>
+                                <mutableString key="text">По словам писателя Валерия Попова, рукопись «Чемодана» Довлатов отдал издателю Игорю Ефимову «не в совсем ещё упакованном виде». Начались длительные переговоры о том, стоит ли издавать сборник рассказов в виде маленькой книги, или же необходимо включить в него ещё одну новеллу[2].
+
+В письме Довлатову, датированном мартом 1985 года, Ефимов сообщил, что особенно ему понравились рассказы «Куртка Фернана Леже» и «Зимняя шапка». Правда, издатель тут же отметил, что из-за постоянной переклички имён возникает ощущение, что это «перепевы написанного». В ответном письме автор предложил Ефимову два эскиза — для обложки и для аннотации: «В центре новой книги Довлатова — чемодан, обыкновенный потрёпанный чемодан, с которым эмигрант Довлатов покинул родину»[1].
+
+В ходе дальнейших переговоров автор высказывал соображения насчёт предисловия, которое ему не понравилось. Ефимов в качестве ответного шага удалил вступительную статью: «…будем издавать „Чемодан“ точно в таком виде и составе, который доставит Вам удовольствие»[1].
+
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hBc-Ds-Vpe"/>
+                        <color key="backgroundColor" red="1" green="0.84154542330000004" blue="0.66018275599999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="hBc-Ds-Vpe" firstAttribute="bottom" secondItem="xGM-Qe-gMh" secondAttribute="bottom" id="HEO-Eh-zwf"/>
+                            <constraint firstItem="xGM-Qe-gMh" firstAttribute="leading" secondItem="wco-S0-64a" secondAttribute="leading" constant="25" id="Hp0-P3-RTt"/>
+                            <constraint firstItem="xGM-Qe-gMh" firstAttribute="top" secondItem="hBc-Ds-Vpe" secondAttribute="top" id="aBB-HP-rQP"/>
+                            <constraint firstAttribute="trailing" secondItem="xGM-Qe-gMh" secondAttribute="trailing" constant="5" id="ywx-ee-lMD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dRR-Mh-hGs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cf3-mW-WoX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1973.913043478261" y="-460.04464285714283"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Pey-5V-rgL">
+            <objects>
+                <tabBarController id="EWD-XU-1qy" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="g3l-ir-8pZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="57N-wq-6NH" kind="relationship" relationship="viewControllers" id="Iiv-uS-fm1"/>
+                        <segue destination="zEv-J1-0vC" kind="relationship" relationship="viewControllers" id="Lom-vw-joN"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xn1-TY-37U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-729" y="58"/>
+        </scene>
+        <!--Об авторе-->
+        <scene sceneID="ICq-Xa-wx3">
+            <objects>
+                <navigationController id="zEv-J1-0vC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Об авторе" image="person.fill" catalog="system" selectedImage="person.fill" id="Lwp-3l-c0j"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="o46-0S-GP2">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="NUH-lN-uO8" kind="relationship" relationship="rootViewController" id="iZA-7j-wy6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qfu-xR-PJs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="195" y="450"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dvq-eP-haL">
+            <objects>
+                <viewController id="NUH-lN-uO8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="icu-EP-1yn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3MO-25-XuH">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RWF-sc-RGa">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1092.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="Htc-Dp-Gu1">
+                                                <rect key="frame" x="0.0" y="20" width="414" height="353"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Htc-Dp-Gu1" secondAttribute="height" multiplier="414:353" id="3Wd-VI-olp"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zR-zs-Sz1">
+                                                <rect key="frame" x="20" y="423" width="374" height="649.5"/>
+                                                <mutableString key="text">Родился 3 сентября 1941 года в Уфе, столице Башкирской АССР, в семье театрального режиссёра, еврея Доната Исааковича Мечика (1909—1995) и актрисы, а впоследствии корректора, армянки Норы Сергеевны Довлатовой (Довлатян)(1908—1999). В Уфу его родители и бабушка были эвакуированы из Ленинграда в июле 1941 года и жили в доме сотрудников НКВД по улице Гоголя, № 56, до 1942 года, когда были дальше эвакуированы в Новосибирск. С 1944 года жил в Ленинграде на улице Рубинштейна, дом № 23.
+
+В 1959 году поступил на отделение финского языка филологического факультета Ленинградского государственного университета и учился там два с половиной года.
+
+Общался с ленинградскими поэтами Евгением Рейном, Анатолием Найманом, Иосифом Бродским и писателем Сергеем Вольфом («Невидимая книга»), художником Александром Неждановым.
+
+Из университета был исключён за неуспеваемость. Служил три года, с 1962 по 1965, во внутренних войсках в охране исправительных колоний в Коми АССР (посёлок Чиньяворык, около 70 км юго-западнее города Ухты). </mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.84154542330000004" blue="0.66018275599999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="7zR-zs-Sz1" secondAttribute="bottom" constant="20" id="DKq-sN-Fgb"/>
+                                            <constraint firstItem="Htc-Dp-Gu1" firstAttribute="leading" secondItem="RWF-sc-RGa" secondAttribute="leading" id="ElE-0A-CK4"/>
+                                            <constraint firstItem="Htc-Dp-Gu1" firstAttribute="top" secondItem="RWF-sc-RGa" secondAttribute="top" constant="20" id="EsN-HJ-KcB"/>
+                                            <constraint firstItem="7zR-zs-Sz1" firstAttribute="top" secondItem="Htc-Dp-Gu1" secondAttribute="bottom" constant="50" id="JbI-yF-nHA"/>
+                                            <constraint firstAttribute="trailing" secondItem="Htc-Dp-Gu1" secondAttribute="trailing" id="YSl-17-H57"/>
+                                            <constraint firstAttribute="trailing" secondItem="7zR-zs-Sz1" secondAttribute="trailing" constant="20" id="lus-w9-cbs"/>
+                                            <constraint firstItem="7zR-zs-Sz1" firstAttribute="leading" secondItem="RWF-sc-RGa" secondAttribute="leading" constant="20" id="wom-Y2-v7Z"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="oCE-Lk-fOt" firstAttribute="top" secondItem="RWF-sc-RGa" secondAttribute="top" id="0m6-Qk-ACQ"/>
+                                    <constraint firstItem="RWF-sc-RGa" firstAttribute="bottom" secondItem="oCE-Lk-fOt" secondAttribute="bottom" id="FD0-9g-dDC"/>
+                                    <constraint firstItem="RWF-sc-RGa" firstAttribute="leading" secondItem="oCE-Lk-fOt" secondAttribute="leading" id="UhF-BY-iJV"/>
+                                    <constraint firstItem="RWF-sc-RGa" firstAttribute="width" secondItem="DPh-qi-2yq" secondAttribute="width" id="iAR-6v-gkA"/>
+                                    <constraint firstItem="RWF-sc-RGa" firstAttribute="trailing" secondItem="oCE-Lk-fOt" secondAttribute="trailing" id="l1t-5s-dQq"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="oCE-Lk-fOt"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="DPh-qi-2yq"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0s0-iC-74Z"/>
+                        <color key="backgroundColor" red="1" green="0.84154542330000004" blue="0.66018275599999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="3MO-25-XuH" secondAttribute="bottom" id="5GY-Ji-17z"/>
+                            <constraint firstItem="3MO-25-XuH" firstAttribute="trailing" secondItem="0s0-iC-74Z" secondAttribute="trailing" id="FFn-QP-Kaq"/>
+                            <constraint firstItem="3MO-25-XuH" firstAttribute="leading" secondItem="0s0-iC-74Z" secondAttribute="leading" id="HI9-h7-ztA"/>
+                            <constraint firstItem="3MO-25-XuH" firstAttribute="top" secondItem="icu-EP-1yn" secondAttribute="top" id="qKD-vZ-0Sn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="z4i-5f-Zcb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kr4-Xv-ibW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1147.8260869565217" y="450"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="240.5" height="353"/>
+        <image name="book.fill" catalog="system" width="128" height="95"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="photo" width="954" height="1500"/>
+    </resources>
+</document>
